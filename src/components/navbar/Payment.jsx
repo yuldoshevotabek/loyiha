@@ -5,7 +5,7 @@ function Payment({ setPay }) {
 		setPay(false)
 	}
 	return (
-		<div className='w-[835px] h-[477px] flex flex-col items-center border-solid border-red-400 border-1 m-auto mt-[161px] mb-[289px]'>
+		<div className='w-[835px] h-[477px] flex flex-col items-center m-auto mt-[161px] mb-[289px]'>
 			<h1 className='text-[#08F02D] font-[700] text-[50px] leading-[60px] '>
 				Congratulations
 			</h1>
