@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import { useTranslation } from 'react-i18next'
 import { NavLink } from 'react-router-dom'
-import Profil from '../modal/Profil'
+import Profil from '../pages/modal/Profil'
 import './header.css'
 
 function Header({ changeLng }) {

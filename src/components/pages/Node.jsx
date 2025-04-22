@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import { v4 as uuidv4 } from 'uuid'
-import AddNewNode from '../modal/AddNewNode'
-import InfoModal from '../modal/InfoModal'
+import AddNewNode from './modal/AddNewNode'
+import InfoModal from './modal/InfoModal'
 
 function Node() {
 	const [add, setAdd] = useState(false)
@@ -28,7 +28,6 @@ function Node() {
 		setIndex(index)
 		setModal(true)
 	}
-
 	return (
 		<div className='bg-[#000000] min-h-screen'>
 			{add && <AddNewNode addForm={addForm} setAdd={setAdd} />}
