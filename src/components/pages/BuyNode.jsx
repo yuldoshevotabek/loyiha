@@ -58,10 +58,7 @@ function BuyNode() {
 			)}
 			<footer className='flex items-center gap-3 mt-[149px] m-auto w-[498px] pb-[21px]'>
 				<div>
-					<img
-						src='../../../src/components/pages/imgs/copyRight.svg'
-						alt='copyRight'
-					/>
+					<img src='../../../public/imgs/copyRight.svg' alt='copyRight' />
 				</div>
 				<div>
 					<p className='text-[#FFFFFF] font-[500] text-[24px] leading-[34px] '>

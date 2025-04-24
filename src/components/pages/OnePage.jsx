@@ -75,7 +75,7 @@ function OnePage() {
 						<div className='w-[520px] h-[300px] border-1 border-[#363607] border-solid rounded-[24px] bg-[#363607] flex flex-col justify-center items-center relative'>
 							<img
 								className='absolute w-[119px] h-[141px] -top-[20px] -left-[19px] -rotate-12'
-								src='../../../src/components/header/imgs/portfolio.svg'
+								src='/imgs/portfolio.svg'
 								alt='beeImg'
 							/>
 							<div>
@@ -90,7 +90,7 @@ function OnePage() {
 							</div>
 							<img
 								className='absolute w-[128px] h-[152px] -right-[25px] -bottom-[30px] rotate-19'
-								src='../../../src/components/header/imgs/portfolio.svg'
+								src='/imgs/portfolio.svg'
 								alt='beeImg'
 							/>
 						</div>
@@ -129,10 +129,7 @@ function OnePage() {
 					</div>
 					<footer className='flex h-[34px] items-center gap-[12px] mt-[124px]	'>
 						<div>
-							<img
-								src='../../../src/components/pages/imgs/Footer.svg'
-								alt='footerImg'
-							/>
+							<img src='/imgs/Footer.svg' alt='footerImg' />
 						</div>
 						<div>
 							<p

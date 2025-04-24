@@ -40,8 +40,8 @@ function NavBar({
 							onClick={oneClick}
 							src={
 								step || twoStep || threeStep
-									? '../../../src/components/navbar/imgs/hexagon2.svg'
-									: '../../../src/components/navbar/imgs/hexagon.svg'
+									? '/imgs/hexagon2.svg'
+									: '/imgs/hexagon.svg'
 							}
 							alt='hexagon'
 						/>
@@ -79,9 +79,9 @@ function NavBar({
 							src={
 								step || threeStep || twoStep
 									? check
-										? '../../../src/components/navbar/imgs/hexagon2.svg'
-										: '../../../src/components/navbar/imgs/hexagon.svg'
-									: '../../../src/components/navbar/imgs/hexagon1.svg'
+										? '/imgs/hexagon2.svg'
+										: '/imgs/hexagon.svg'
+									: '/imgs/hexagon1.svg'
 							}
 							alt='hexagon'
 						/>
@@ -121,9 +121,9 @@ function NavBar({
 							src={
 								check
 									? next
-										? '../../../src/components/navbar/imgs/hexagon2.svg'
-										: '../../../src/components/navbar/imgs/hexagon.svg'
-									: '../../../src/components/navbar/imgs/hexagon1.svg'
+										? '/imgs/hexagon2.svg'
+										: '/imgs/hexagon.svg'
+									: '/imgs/hexagon1.svg'
 							}
 							alt='hexagon'
 						/>
@@ -159,11 +159,7 @@ function NavBar({
 				<div>
 					<div className='relative w-[100px] h-[110px] flex items-center justify-center cursor-pointer active:scale-95'>
 						<img
-							src={
-								next
-									? '../../../src/components/navbar/imgs/hexagon.svg'
-									: '../../../src/components/navbar/imgs/hexagon1.svg'
-							}
+							src={next ? '/imgs/hexagon.svg' : '/imgs/hexagon1.svg'}
 							alt='hexagon'
 						/>
 						<p

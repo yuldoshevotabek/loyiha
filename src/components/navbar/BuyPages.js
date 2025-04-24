@@ -1,7 +1,7 @@
 export const Data = [
 	{
 		id: 1,
-		img: '../../../src/components/header/imgs/portfolio1.svg',
+		img: '/imgs/portfolio1.svg',
 		title: 'Basic zkNode',
 		minTitle: 'Services included',
 		paragraf: {
@@ -36,7 +36,7 @@ export const Data = [
 	},
 	{
 		id: 2,
-		img: '../../../src/components/header/imgs/portfolio1.svg',
+		img: '/imgs/portfolio1.svg',
 		title: 'Advanced zkNode',
 		minTitle: 'Services included',
 		paragraf: {
@@ -71,7 +71,7 @@ export const Data = [
 	},
 	{
 		id: 3,
-		img: '../../../src/components/header/imgs/portfolio1.svg',
+		img: '/imgs/portfolio1.svg',
 		title: 'Full zkNode',
 		minTitle: 'Services included',
 		paragraf: {
