@@ -23,7 +23,7 @@ function Header({ changeLng }) {
 					className='flex w-[157px] h-[70px] items-center font-[500] text-[30px] leading-[40px]'
 				>
 					<div className='active:scale-95'>
-						<img src='/public/imgs/vite.svg' alt='viteImg' />
+						<img src='/imgs/vite.svg' alt='viteImg' />
 						<img
 							className='cursor-pointer'
 							src='../../../src/components/header/imgs/portfolio.svg'
