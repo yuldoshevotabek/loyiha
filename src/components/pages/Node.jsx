@@ -42,19 +42,7 @@ function Node() {
 			<h1 className='pt-[56px] text-[#FBDA00] font-[700] text-[60px] leading-[80px] text-center'>
 				My Nodes
 			</h1>
-			<div className='w-[1128px] flex flex-wrap gap-[20px] mt-[37px]  m-auto'>
-				{state.data.map((item, index) => (
-					<div
-						key={item.id}
-						onClick={() => modalClick(index)}
-						className='w-[360px] h-[240px] rounded-[20px] border-[1px] border-solid border-[#FBDA00] flex items-center justify-center flex-col hover:scale-105 hover:border-[#363607] cursor-pointer active:scale-100 transition-all ease-linear duration-200'
-					>
-						<p className=' text-center font-[700] text-[#FBDA00] text-[40px] leading-[50px] uppercase '>
-							{item.name}
-						</p>
-						<p className='text-[#FFF] text-[20px]'>{item.age} yosh</p>
-					</div>
-				))}
+			<div className='w-[1140px] flex flex-wrap gap-[20px] mt-[37px]  m-auto h-[500px] overflow-auto'>
 				<div
 					className='w-[360px] h-[240px] rounded-[20px] border-1 border-solid border-[#363607] bg-[#FBDA00] flex items-center justify-center cursor-pointer active:scale-95 transition-all ease-linear duration-300'
 					onClick={() => setAdd(true)}
@@ -70,6 +58,21 @@ function Node() {
 						</div>
 					</div>
 				</div>
+				{state.data
+					.slice()
+					.reverse()
+					.map((item, index) => (
+						<div
+							key={item.id}
+							onClick={() => modalClick(index)}
+							className='w-[360px] h-[240px] rounded-[20px] border-[1px] border-solid border-[#FBDA00] flex items-center justify-center flex-col hover:scale-105 hover:border-[#363607] cursor-pointer active:scale-100 transition-all ease-linear duration-200'
+						>
+							<p className=' text-center font-[700] text-[#FBDA00] text-[40px] leading-[50px] uppercase '>
+								{item.name}
+							</p>
+							<p className='text-[#FFF] text-[20px]'>{item.age} yosh</p>
+						</div>
+					))}
 			</div>
 			<div className='m-auto w-[1128px] pb-[117px] mt-[80px] bg-[#000]'>
 				<div className='w-[489px] h-[66px] rounded-[12px] bg-[#FBDA00] flex items-center justify-center   cursor-pointer active:scale-95 transition-all ease-linear duration-300'>
