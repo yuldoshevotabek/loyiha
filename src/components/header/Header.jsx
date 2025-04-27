@@ -5,7 +5,7 @@ import Profil from '../pages/modal/Profil'
 import './header.css'
 
 function Header({ changeLng }) {
-	const [profil, setProfil] = useState(true)
+	const [profil, setProfil] = useState(false)
 	function profilMenuClick() {
 		setProfil(true)
 	}

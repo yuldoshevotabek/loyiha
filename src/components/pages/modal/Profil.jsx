@@ -41,7 +41,7 @@ function Profil({ setProfil }) {
 					</label>
 				</div>
 			)}
-			<div className='border-1 border-solid border-red-400 mt-25 '>
+			<div className=' mt-25 '>
 				{save ? (
 					<ProfilInfo name={name} setSave={setSave} />
 				) : (
