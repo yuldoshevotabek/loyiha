@@ -14,7 +14,7 @@ function Profil({ setProfil }) {
 		}
 	}
 	const [save, setSave] = useState(false)
-	const [name, setName] = useState({ name: '', lastName: '', age: '' })
+	const [namee, setName] = useState({ name: '', lastName: '', age: '' })
 	const handleInput = e => {
 		const { name, value } = e.target
 		setName(prev => ({ ...prev, [name]: value }))
@@ -43,7 +43,7 @@ function Profil({ setProfil }) {
 			)}
 			<div className=' mt-25 '>
 				{save ? (
-					<ProfilInfo name={name} setSave={setSave} />
+					<ProfilInfo namee={namee} setSave={setSave} />
 				) : (
 					<div className='flex flex-col items-center gap-2'>
 						<div>
