@@ -20,7 +20,7 @@ function InfoModal({ setModal, index, state, setState }) {
 					onClick={cancelNode}
 				></i>
 				<div className='mt-5 ml-7'>
-					<h1 className='text-[30px] font-[600]'>
+					<h1 className='text-[30px] font-[600] uppercase'>
 						Name: {state.data[index].name}
 					</h1>
 					<h1 className='text-[30px]'>Age: {state.data[index].age}</h1>

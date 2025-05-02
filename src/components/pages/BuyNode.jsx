@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import { useTranslation } from 'react-i18next'
 import BuyPages from '../navbar/BuyPages.jsx'
 import Check from '../navbar/Check.jsx'
 import NavBar from '../navbar/NavBar'
@@ -14,10 +15,11 @@ function BuyNode() {
 	const [check, setCheck] = useState(false)
 	const [next, setNext] = useState(false)
 	const [pay, setPay] = useState(false)
+	const { t } = useTranslation()
 	return (
 		<div className='bg-[#000000] min-h-screen'>
 			<h1 className='font-[700] text-[#FBDA00] text-[60px] leading-[80px] text-center pt-[56px]'>
-				Buy SVPN NODE
+				{t('buyNodeS')}
 			</h1>
 			{pay ? (
 				<Payment setPay={setPay} />

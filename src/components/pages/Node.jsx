@@ -1,9 +1,11 @@
 import React, { useEffect, useState } from 'react'
+import { useTranslation } from 'react-i18next'
 import { v4 as uuidv4 } from 'uuid'
 import AddNewNode from './modal/AddNewNode'
 import InfoModal from './modal/InfoModal'
 
 function Node() {
+	const { t } = useTranslation()
 	const [add, setAdd] = useState(false)
 	const [modal, setModal] = useState(false)
 	const [index, setIndex] = useState(null)
@@ -40,9 +42,9 @@ function Node() {
 				/>
 			)}
 			<h1 className='pt-[56px] text-[#FBDA00] font-[700] text-[60px] leading-[80px] text-center'>
-				My Nodes
+				{t('nodes')}
 			</h1>
-			<div className='w-[1140px] flex flex-wrap gap-[20px] mt-[37px]  m-auto h-[500px] overflow-auto'>
+			<div className='w-[1145px] flex flex-wrap gap-[20px] mt-[37px]  m-auto h-[500px] overflow-auto'>
 				<div
 					className='w-[360px] h-[240px] rounded-[20px] border-1 border-solid border-[#363607] bg-[#FBDA00] flex items-center justify-center cursor-pointer active:scale-95 transition-all ease-linear duration-300'
 					onClick={() => setAdd(true)}
@@ -53,26 +55,23 @@ function Node() {
 						</div>
 						<div className='h-10'>
 							<p className='text-[#000000] font-[700] text-[30px] leading-[40px] text-center'>
-								Add New Node
+								{t('addNewNode')}
 							</p>
 						</div>
 					</div>
 				</div>
-				{state.data
-					.slice()
-					.reverse()
-					.map((item, index) => (
-						<div
-							key={item.id}
-							onClick={() => modalClick(index)}
-							className='w-[360px] h-[240px] rounded-[20px] border-[1px] border-solid border-[#FBDA00] flex items-center justify-center flex-col hover:scale-105 hover:border-[#363607] cursor-pointer active:scale-100 transition-all ease-linear duration-200'
-						>
-							<p className=' text-center font-[700] text-[#FBDA00] text-[40px] leading-[50px] uppercase '>
-								{item.name}
-							</p>
-							<p className='text-[#FFF] text-[20px]'>{item.age} yosh</p>
-						</div>
-					))}
+				{state.data.map((item, index) => (
+					<div
+						key={item.id}
+						onClick={() => modalClick(index)}
+						className='w-[360px] h-[240px] rounded-[20px] border-[1px] border-solid border-[#FBDA00] flex items-center justify-center flex-col hover:scale-105 hover:border-[#363607] cursor-pointer active:scale-100 transition-all ease-linear duration-200'
+					>
+						<p className=' text-center font-[700] text-[#FBDA00] text-[40px] leading-[50px] uppercase '>
+							{item.name}
+						</p>
+						<p className='text-[#FFF] text-[20px]'>{item.age} yosh</p>
+					</div>
+				))}
 			</div>
 			<div className='m-auto w-[1128px] pb-[117px] mt-[80px] bg-[#000]'>
 				<div className='w-[489px] h-[66px] rounded-[12px] bg-[#FBDA00] flex items-center justify-center   cursor-pointer active:scale-95 transition-all ease-linear duration-300'>
